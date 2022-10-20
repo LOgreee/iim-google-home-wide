@@ -13,4 +13,4 @@ The Google logo belongs to Google LLC.<br />All other illustrations belong to Th
 
 ___
 
-You can contact me via Linkedin:<br />https://www.linkedin.com/in/thibault-morisse-/
+You can contact me via Linkedin:<br />[Thibault MORISSE](https://www.linkedin.com/in/thibault-morisse-/)
