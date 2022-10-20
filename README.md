@@ -6,11 +6,13 @@
 This project is an HTML/CSS student project on a fake Google product called "Google Home Wide". 
 
 This site was created as part of a student project at the Institut de l'Internet et du Multimédia (IIM).
+
 The code of this one is of course open-source.
 
 This site is in no way affiliated with Google LLC. or any other entities.
 
 The Google logo belongs to Google LLC.
+
 All other illustrations belong to Thibault MORISSE, you have the right to use them in a non-commercial context with the mention "©Thibault MORISSE".
 
 ___
