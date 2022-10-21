@@ -1,0 +1,446 @@
+/* Importation de font google */
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Basic elements */
+    *{
+        scroll-behavior: smooth;
+    }
+
+    /* Scrollbar */
+    *::-webkit-scrollbar {
+        display: block;
+        width: 7px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: #00000000;
+        margin: 10px 0;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #000;
+        border-radius: 10px;
+    }
+
+
+
+    h1,h2,h3{
+        color: #000 !important;
+    }
+
+    img{
+        max-width: 100vw;
+        max-height: 100%;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    ul>li>a{
+        text-decoration: none;
+        color: inherit;
+        transition: 0.2 ease-in-out;
+    }
+        ul>li>a:hover{
+            text-decoration: underline;
+            transition: 0.2 ease-in-out;
+        }
+
+    a.button{
+        padding: 10px 40px;
+        text-align: center;
+        text-decoration: none;
+        color: #888;
+        background: #FFF;
+        border: solid 1px #888;
+        border-radius: 20px;
+        transition: 0.2s ease-in-out;
+    }
+
+         a.button:hover{
+            color: #FFF;
+            background: #888;
+            border: solid 1px #888;
+            transition: 0.2s ease-in-out;
+        }
+
+/* Elements en page */
+    body{
+        font-family: 'Roboto', sans-serif;
+        width: 100vw;
+        margin: 0 0 0 0;
+        overflow-x: hidden;
+        overflow: overlay;
+    }
+
+    /* Header */
+    header{
+        position: sticky;
+        width: calc(100vw - 100px);
+        height: 40px;
+        margin: 0;
+        padding: 20px 50px;
+        top: 0;
+        background: #FFF;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+
+        /*Désactive la sélection*/
+        -webkit-user-select: none;
+    }
+
+        header>*{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        header>a{
+             height: 100%;
+             margin-right: 50px;
+        }
+
+        header>nav>a{
+            margin-right: 50px;
+            text-decoration: none;
+            transition: 0.2 ease-in-out;
+        }
+
+        header>nav>a:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            transition: 0.2 ease-in-out;
+        }
+
+    /* Main */
+    main{
+        color:#888;
+    }
+
+    main>div{
+        display: flex;
+        width: calc(50vw - 40px);
+        align-items: center;
+        background-size: calc(50% - 40px);
+        background-repeat: no-repeat;
+        margin: 300px 0;
+    }
+
+        main>div.gauche{
+            padding: 40px  50vw 40px 40px;
+            background-origin: right;
+            background-position: right center;
+        }
+
+        main>div.droite{
+            padding: 40px 40px 40px 50vw;
+            background-origin: left;
+            background-position: left center;
+        }
+
+    /* Cover */
+    #cover{
+        height: calc(100vh - 100px - 80px);
+        background-image: url(../image/ghome_wide_cover.png);
+        background-size: cover;
+        margin: 0;
+    }
+
+        #cover>section>h2{
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+            #cover>section>h2>img{
+                width: 100px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 20px;
+            }
+
+        #cover>section>h1{
+            color: #888;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        #cover>section>div{
+            display: flex;
+        }
+        
+            #cover>section>div>a{
+                width: 40%;
+                margin-right: 10px
+            }
+ 
+             #cover>section>div>a:last-of-type{
+                margin-right: 0px;
+            }
+
+    /* Design massif / Cinema */
+    #discover{
+        height: 600px;
+        background-image: url(../image/ghome_wide_famille.png);
+    }
+
+    /* Design élégant */
+    #design_elegant{
+        height: 600px;
+        background-image: url(../image/ghome_wide_env.png);
+    }
+
+    /* Design wide */
+    #design_wide{
+        height: 700px;
+        width: 100%;
+        background:  url(../image/ghome_wide_2.png), url(../image/wide.png);
+        background-size: 70%, cover !important;
+        background-repeat: no-repeat !important;
+        background-origin: center !important;
+        background-position: center !important;
+    }
+
+    /* Son / Cinema */
+    #son{
+        height: 600px;
+        background-image: url(../image/ghome_wide_cinema.png);
+    }
+
+    /* Microphone */
+    #microphone{
+        height: 600px;
+        background-image: url(../image/ghome_wide_mic.png);
+    }
+
+    /* Service (hey google) */
+    #service{
+        height: 600px;
+        background-image: url(../image/hey_google.png);
+        margin: 300px 0 0 0;
+    }
+
+    /* Achat */
+    #achat{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: calc(100vw - 80px);
+        margin: 0;
+        padding: 0 40px;
+    }
+
+        #achat>.button{
+            padding: 20px 40px;
+            width: 40%;
+        }
+
+             #achat>.button:hover{
+                background: #006aff;
+                border: solid 1px #006aff;
+            }
+
+    /* Footer */
+    footer{
+        /*Désactive la sélection*/
+        -webkit-user-select: none;
+    }
+    /* Première partie */
+    footer>div:first-of-type{
+        display: flex;
+        width: 100vw;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+        footer>div:first-of-type>div{
+            width: calc(100%/3 - 80px);
+            height: 100%;
+            padding: 20px 40px;
+            display: inline-block;
+        }
+        
+           footer>div:first-of-type>div>ul>li{
+                margin-bottom: 10px;
+            }
+            footer>div:first-of-type>div>a>img{
+                width: 100%;
+                max-width: 200px;
+            }
+
+    
+    /* Seconde partie */
+    footer>div:last-of-type{
+        height: 50px;
+        width: 100wv;
+        border-top: solid 1px #444;
+        padding: 0 40px;
+    }
+
+        footer>div:last-of-type>*{
+            display: inline-block;
+            margin: 20px 20px 20px  0;
+            font-size: 12px;
+            color: inherit;
+            text-decoration: none;
+            transition: 0.2 ease-in-out;
+        }
+
+        footer>div:last-of-type>a{
+            text-decoration: underline;
+            transition: 0.2 ease-in-out;
+            }
+
+        footer>div:last-of-type>a:hover{
+            text-decoration: none;
+            transition: 0.2 ease-in-out;
+            }
+
+
+/* Responsive design */
+/*point de rupture:
+
+Desktop : au delà de 1024 pixels
+Tablette : entre 600 et 1024 pixels (en mode portrait) 800px
+Mobile : entre 320 et 600 pixels (en mode portrait) 400px
+
+cela sont des moyennes de tailles d ecran*/
+
+
+/* Tablette */
+@media screen and (max-width:800px){
+    body{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img{
+        max-width: 100%;
+    }
+
+    a.button{
+        padding: 10px 30px;
+    }
+
+    /* Header */
+    header{
+        width: calc(100vw - 40px);
+        top:0;
+        left: 0;
+        height: 20px;
+        padding: 20px;
+    }
+
+        header>*{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        header>a{
+             height: 100%;
+             margin-right: 20px;
+        }
+
+        header>nav>a{
+            margin-right: 20px;
+        }
+
+    /* Main */
+    main>div{
+        display: flex;
+        width: calc(100vw - 80px);
+        height: calc(50vh - 40px);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+
+        main>div.gauche{
+            padding: 50vh 40px 40px 40px;
+            background-origin: top;
+            background-position: top center;
+        }
+
+        main>div.droite{
+            padding: 50vh 40px 40px 40px;
+            background-origin: top;
+            background-position: top center;
+        }
+
+    /* Cover */
+    #cover{
+        width: calc(100vw - 80px);
+        height: calc(50vh - 40px);
+        padding: 50vh 40px 40px 40px;
+        background-size: 140%;
+        background-origin: right top;
+        background-position: right top;
+    }
+
+    /* Design massif / Cinema */
+    #discover{
+        height: calc(50vh - 40px);
+    }
+
+    /* Design élégant */
+    #design_elegant{
+        height: calc(50vh - 40px);
+    }
+
+    /* Design wide */
+    #design_wide{
+        height: 400px;
+        width: 100vw !important;
+        background-size: 70%, 100%!important;
+    }
+
+    /* Son / Cinema */
+    #son{
+        height: calc(50vh - 40px);
+    }
+
+    /* Microphone */
+    #microphone{
+        height: calc(50vh - 40px);
+    }
+
+    /* Service (hey google) */
+    #service{
+        height: calc(50vh - 40px);
+        margin: 0;
+    }
+
+        /* Achat */
+    #achat{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: calc(100vw - 80px);
+        height: 100%;
+        margin: 0;
+        padding: 0 40px;
+    }
+    
+    /* Footer */
+    /* Première partie */
+    footer>div:first-of-type{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        footer>div:first-of-type>div{
+            width: calc(100% - 80px);
+        }
+            footer>div:first-of-type>div>ul{
+                margin: 0;
+                padding: 0;
+            }
+           footer>div:first-of-type>div>ul>li{
+                margin: 0 0 10px 0;
+                padding: 0;
+            }
+            footer>div:first-of-type>div>a>img{
+                width: 100%;
+                max-width: 200px;
+            }
+}
